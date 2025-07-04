@@ -1,8 +1,200 @@
+
+/* reset code and common code  */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ list-style-type: none;
+ text-decoration: none;
+ outline: 0;
+ font-weight: 400;
+
+}
+html{
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+      font-family: "Roboto", sans-serif;
+    /* font-family: "Italianno", cursive;  */
+
+}
 body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow:0.1rem 0.1rem 0.1rem #c4c4c4 , -0.2rem 0rem  0.2rem #c4c4c4  ;
+
+}
+
+/* reset code and common code end  */
+
+/* header starts here  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    position: sticky;
+    z-index: 10;
+    min-height: 5vh;
+
+}
+.logo-figure{
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 5rem;
+}
+.logo{
+    font-size: 4rem;
+}
+ nav ul li{
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    transition: all 0.4s;
+
+
+ }
+ .nav-link{
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+
+}
+nav li:hover{
     background-color: blue;
-    color:white;
+    border-radius: 0.8rem;
 }
-h2{
-    background-color: aquamarine;
-    color: black
-}
+/* header endss here  */
+
+
+/* main starts here  */
+
+/* banner starts here  */
+
+  #banner-section{
+    display: flex;
+    align-items: center;
+    padding: 1rem ;
+    min-height: 55vh; 
+    justify-content: center;
+    margin-top: 10rem;
+
+  }
+
+  .blog-article{
+    flex-basis: 50%;
+    margin: 1rem;
+  }
+  .blog-heading{
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-size: 4.3rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+  }
+
+  .blog-description{
+    font-size: 2rem;
+    text-align: justify;
+  }
+   .blog-aside{
+    flex-basis: 50%;
+    margin: 1rem;
+  }
+   .a-image{
+    width: 55rem;
+    height: 45rem;
+   }
+/* banner ends here  */
+
+/* about starts here  */
+   #blog-about{
+    padding: 5rem 1rem;
+    background-color: #4c4c4c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 55vh;
+    justify-content: space-evenly;
+   }  
+     .about-heading{
+      font-size: 7rem;
+      color: #fff;
+      justify-content: space-evenly;
+      font-family: "Italianno", cursive;
+      
+     }
+     .card-container{
+      display: flex;
+      align-items: center;
+
+     }
+     .card{
+      flex: 1;
+      background-color: #a09d9d;
+      padding: 3rem 1rem;
+      margin: 2rem;
+       display: flex;
+      flex-direction: column; 
+      transition: transform 0.4s;
+      height: 50rem;
+      border-radius: 1rem;
+     }
+     .card:hover{
+      transform: scale(1.1);
+     }
+     .card-header{
+       font-size: 3rem;
+       margin-bottom: 2rem;
+       text-align: center;
+
+     }
+     .card-desc{
+      padding: 1rem 0.4rem;
+      text-align: justify;
+      font-size: 1.6rem;
+      margin-bottom: 5rem;
+     }
+     .card-img{
+      width:100%;
+      padding: 1rem 0.4rem;
+      margin-top:-5rem;
+     }
+     /* .cox{
+     text-align: center;
+      height: 30rem;
+      width: 30rem;
+     } */
+     
+     .btn{
+      align-self: center;
+      width:50%;
+      background-color: rgb(148, 247, 103);
+      border: none;
+      padding: 0.8rem 0;
+      font-size: 1.5rem;
+      box-shadow: 0.1rem 0.1rem 0.3rem black;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    
+     }
+     .btn:hover{
+      background-color: #fff;
+     }
+      
+
+
+/* about ends here  */
+
+/* main ends here  */
+
